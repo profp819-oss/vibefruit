@@ -1,0 +1,179 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#fff;
+color:#222;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6') center/cover;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+
+nav{
+position:absolute;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:25px 10%;
+z-index:2;
+}
+
+.logo{
+font-size:2rem;
+font-weight:700;
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero-content{
+text-align:center;
+color:white;
+z-index:2;
+}
+
+.hero-content h1{
+font-size:5rem;
+font-family:'Poppins';
+}
+
+.hero-content p{
+font-size:1.4rem;
+margin:15px 0;
+}
+
+.btn{
+display:inline-block;
+background:#ff8c42;
+padding:15px 35px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:90px 10%;
+}
+
+.section h2{
+font-size:2.5rem;
+margin-bottom:30px;
+text-align:center;
+font-family:'Poppins';
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px;
+}
+
+.price{
+padding:15px;
+font-weight:bold;
+color:#3CB371;
+}
+
+.favorite-card{
+background:linear-gradient(45deg,#ffc83d,#ff8c42);
+padding:30px;
+border-radius:20px;
+font-size:1.2rem;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:3rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
